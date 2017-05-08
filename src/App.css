@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Helvetica Neue";
 }
 
 .App-logo {
@@ -12,9 +13,18 @@
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+.App-body {
+  margin: 50px auto;
+  width: 1000px;
+  background: #f3efe7;
+  text-align: left;
 }
+
+.App h2 {
+  margin-left: 20px;
+  color: #012169;
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
