@@ -9,7 +9,7 @@ class App extends Component {
     var selectedFile = document.getElementById('myFile').files[0];
     var form = new FormData();
     form.append('file', selectedFile)
-    form.append('parent_id', '0')
+    form.append('parent_id', '26488864303')
 
     $.ajax({
         url: 'https://upload.box.com/api/2.0/files/content',
