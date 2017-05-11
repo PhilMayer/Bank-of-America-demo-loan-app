@@ -22,7 +22,7 @@ class App extends Component {
 
     $.ajax({
         url: 'https://upload.box.com/api/2.0/files/content',
-        headers: {Authorization: 'Bearer 90UwdDLgSl8DqbAkDAb2SPekgIz3sjtJ'},
+        headers: {Authorization: 'Bearer XicCrx4cPvsE5q28gTxY5q2Xg2I4yBiC'},
         type: 'POST',
         processData: false,
         contentType: false,
@@ -42,8 +42,8 @@ class App extends Component {
   previewDoc (fileId) {
     // Download file just uploaded
     $.ajax({
-      url: `https://api.box.com/2.0/download/90UwdDLgSl8DqbAkDAb2SPekgIz3sjtJ/${fileId}`,
-      headers: {Authorization: 'Bearer 90UwdDLgSl8DqbAkDAb2SPekgIz3sjtJ'},
+      url: `https://api.box.com/2.0/download/XicCrx4cPvsE5q28gTxY5q2Xg2I4yBiC/${fileId}`,
+      headers: {Authorization: 'Bearer XicCrx4cPvsE5q28gTxY5q2Xg2I4yBiC'},
       type: 'GET'
     }).then((response) => {
       console.log("success")
