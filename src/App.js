@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ProgressBar from './progress-bar.png';
 import './App.css';
 import $ from 'jquery';
-import Box from 'nodejs-box';
 
 class App extends Component {
   constructor () {
@@ -22,7 +21,7 @@ class App extends Component {
 
     $.ajax({
         url: 'https://upload.box.com/api/2.0/files/content',
-        headers: {Authorization: 'Bearer XicCrx4cPvsE5q28gTxY5q2Xg2I4yBiC'},
+        headers: {Authorization: 'Bearer WjP4OwiQ4MD1YEwXCZoODJyvHgZu4Kmr'},
         type: 'POST',
         processData: false,
         contentType: false,
@@ -37,24 +36,6 @@ class App extends Component {
         })
     }
     )
-  }
-
-  previewDoc (fileId) {
-    // Download file just uploaded
-    $.ajax({
-      url: `https://api.box.com/2.0/download/XicCrx4cPvsE5q28gTxY5q2Xg2I4yBiC/${fileId}`,
-      headers: {Authorization: 'Bearer XicCrx4cPvsE5q28gTxY5q2Xg2I4yBiC'},
-      type: 'GET'
-    }).then((response) => {
-      console.log("success")
-    })
-
-    // Preview file just uploaded
-    // var preview = new Box.Preview();
-    //   	preview.show(`${fileId}`, '4uxmAI5oRmZnXjdJlSJsnt9levnSD6DF', {
-    //         container: '.preview-container',
-    //         showDownload: true
-    //     });
   }
 
   render() {

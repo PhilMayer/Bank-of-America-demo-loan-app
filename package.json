@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "jquery": "^3.2.1",
+    "node-box-api": "^1.0.4",
+    "nodejs-box": "^0.1.3",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
